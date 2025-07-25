@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>All Programs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Page 1 -->
+    <div class="background-img"></div>
+    <div id=" page1" class="page active">
+
+        <h1>All Projects</h1>
+        <br>
+
+        <h2>Python Projects</h2>
+        <button onclick="showPage('page2')">Beginner Level</button>
+        <button onclick="showPage('page3')">Intermediate Level</button>
+        <button onclick="showPage('page4')">Advanced Level</button>
+        <br><br>
+
+        <h2>Web development Projects</h2>
+        <button onclick="location.href='web_b.html'">Beginner Level</button>
+        <button onclick="location.href='web_i.html'">Intermediate Level</button>
+        <button onclick="location.href='web_a.html'">Advanced Level</button>
+        <br><br><br>
+
+        <a href="beginner.html">Beginner Friendly Projects</a>
+        <br><br>
+
+        <a href="unique.html">Unique for freshers Projects</a>
+    </div>
+
+    <!-- Page 2 -->
+    <div id="page2" class="page">
+        <button onclick="showPage('page1')">BACK</button>
+        <button onclick="showPage('page1')">HOME</button>
+        <h1>Beginner Level Python Projects</h1>
+        <button class="huge-button" onclick="showPage('page3')">Simple Calculator<br><br>
+            <img src="images/Calculator.jpg" alt="Icon">
+        </button>
+        <button class="huge-button" onclick="goToPage2()">To-do List<br><br>
+            <img src="images/to-do.webp" alt="Icon">
+        </button>
+        <button class="huge-button" onclick="goToPage2()">Number Guessing Game<br><br>
+            <img src="images/number_guessing.jpg" alt="Icon">
+        </button>
+        <br><br>
+        <button class="huge-button" onclick="goToPage2()">Dice Rolling Simulator<br><br>
+            <img src="images/dice_rolling.png" alt="Icon">
+        </button>
+        <button class="huge-button" onclick="goToPage2()">Word Counter<br><br>
+            <img src="images/word_count.png" alt="Icon">
+        </button>
+        <button class="huge-button" onclick="goToPage2()">Word Frequency Counter<br><br>
+            <img src="images/word_freq.png" alt="Icon">
+        </button>
+    </div>
+
+    <!-- Page 3 -->
+    <div id="page3" class="page">
+        <button onclick="showPage('page2')">BACK</button>
+        <button onclick="showPage('page1')">HOME</button>
+        <ul>
+            <li><button class="huge-button" onclick="goToPage1()">Simple Calculator<br><br>
+                    <img src="images/Calculator.jpg" alt="Icon">
+                </button>
+                <h2>Enter Your Name</h2>
+                <form method="POST">
+                    <input type="text" name="username" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Page 4 -->
+    <div id="page4" class="page">
+        <button onclick="showPage('page1')">HOME</button>
+        <ul>
+            <li><button class="huge-button" onclick="goToPage2()">Simple Calculator<br><br>
+                    <img src="images/Calculator.jpg" alt="Icon">
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            document.querySelectorAll('.page').forEach(function (page) {
+                page.classList.remove('active');
+            });
+            // Show selected page
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
