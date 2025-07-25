@@ -1,0 +1,69 @@
+.page {
+            display: none;
+            margin: 80px;
+            /* Hide all pages by default */
+        }
+
+        .active {
+            display: block;
+            /* Show only the active page */
+        }
+
+    .background-image
+    {
+        background: url(images/bg_img.jpg);
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        background-position: center;
+        
+    }
+
+        h1 {
+            color: red;
+            text-align: center;
+        }
+
+        h2 {
+            color: blue;
+        }
+
+        .button {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .huge-button {
+            gap: 100px 100px;
+            /* Space between buttons */
+            width: 350px;
+            margin-right: 10px;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 20px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 24px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .huge-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        .huge-button img {
+            width: 300px;
+            height: 300px;
+            margin-bottom: 15px;
+        }
