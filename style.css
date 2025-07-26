@@ -1,6 +1,5 @@
 .page {
             display: none;
-            margin: 80px;
             /* Hide all pages by default */
         }
 
@@ -9,23 +8,118 @@
             /* Show only the active page */
         }
 
-    .background-image
-    {
-        background: url(images/bg_img.jpg);
-        background-size: cover; 
-        background-repeat: no-repeat; 
-        background-position: center;
-        
-    }
+    body {
+  margin: 30;
+  height: 100vh;
+  background-image: url('images/b_img.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.top-right-nav {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.top-right-nav a {
+  text-decoration: none;
+  color: white ;
+  font-weight: bold;
+}
 
         h1 {
-            color: red;
-            text-align: center;
+            color: white;
+            text-align: left;
         }
 
         h2 {
             color: blue;
         }
+
+        .dropdown {
+  position: relative;
+}
+
+/* Dropdown button (main link) */
+.dropbtn {
+  cursor: pointer;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: black;
+  background-color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+        .rounded-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Green color, change as needed */
+  color: white;
+  text-decoration: none;
+  border-radius: 25px; /* This makes it rounded */
+  font-weight: bold;
+  margin: 5px;
+  transition: background-color 0.3s;
+}
+
+.rounded-btn:hover {
+  background-color: #45a049; /* Slightly darker on hover */
+}
+
+.quote-container {
+  position: fixed;
+  right: 60px; /* distance from right edge */
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 500px;
+  text-align: center;
+  color: white;
+  font-style: italic;
+  font-size: 50px;
+}
+
+.quote-below {
+  position: fixed;
+  right: 60px; /* distance from right edge */
+  top: 70%;
+  transform: translateY(-50%);
+  max-width: 500px;
+  text-align: center;
+  color: white;
+  font-style: italic;
+}
 
         .button {
             border: none;
