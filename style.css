@@ -8,14 +8,21 @@
             /* Show only the active page */
         }
 
-    body {
+    .b {
   margin: 30;
   height: 100vh;
-  background-image: url('images/b_img.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.bg-img1{
+    background-image: url('images/b_img.jpg');
+}
+
+.p2{
+    background-color:lavender;
 }
 
 .top-right-nav {
@@ -34,8 +41,13 @@
 }
 
         h1 {
-            color: white;
-            text-align: left;
+            color: black;
+            text-align: center;
+        }
+
+        body {
+            margin-top: 40px;
+            margin-left: 40px;
         }
 
         h2 {
@@ -134,7 +146,7 @@
         }
 
         .huge-button {
-            gap: 100px 100px;
+            gap: 200px 200px;
             /* Space between buttons */
             width: 350px;
             margin-right: 10px;
