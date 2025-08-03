@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Box Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .box {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .box:hover {
+            transform: scale(1.03);
+        }
+
+        .box h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .box p {
+            color: #666;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h3>Card Title 1</h3>
+        <p>This is a simple card/box that you can use to show any content.</p>
+        <a href="#" class="btn">Read More</a>
+    </div>
+
+    <div class="box">
+        <h3>Card Title 2</h3>
+        <p>You can add more cards side by side or stacked depending on screen size.</p>
+        <a href="#" class="btn">Explore</a>
+    </div>
+
+</body>
+
+</html>
